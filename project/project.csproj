@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E397FC8B-C10A-4CAF-BBB0-DE03E5BE7D83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Z.Expressions.Eval, Version=4.0.42.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Expressions.Eval.4.0.42\lib\net45\Z.Expressions.Eval.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Bisection method.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Bisection method.Designer.cs">
+      <DependentUpon>Bisection method.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CramersRule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\CramersRule.Designer.cs">
+      <DependentUpon>CramersRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\False Position Method.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\False Position Method.Designer.cs">
+      <DependentUpon>False Position Method.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\FixedDGV.cs" />
+    <Compile Include="Resources\FixedDGV_2.cs" />
+    <Compile Include="Resources\FixedPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\FixedPoint.Designer.cs">
+      <DependentUpon>FixedPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\GaussElimination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\GaussElimination.Designer.cs">
+      <DependentUpon>GaussElimination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LUDecomposition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\LUDecomposition.Designer.cs">
+      <DependentUpon>LUDecomposition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\NewtonMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\NewtonMethod.Designer.cs">
+      <DependentUpon>NewtonMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\xu.cs" />
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\Bisection method.resx">
+      <DependentUpon>Bisection method.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CramersRule.resx">
+      <DependentUpon>CramersRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\False Position Method.resx">
+      <DependentUpon>False Position Method.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\FixedPoint.resx">
+      <DependentUpon>FixedPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\GaussElimination.resx">
+      <DependentUpon>GaussElimination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LUDecomposition.resx">
+      <DependentUpon>LUDecomposition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\NewtonMethod.resx">
+      <DependentUpon>NewtonMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_mac_os_X_395229.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
